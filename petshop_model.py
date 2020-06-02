@@ -53,14 +53,4 @@ def scoreModel(Age_Group_Intake, Animal_Type_New, Color_Group, Intake_Condition,
 
         return EM_EVENTPROBABILITY
     except Exception as e:
-        print(e)
-        return float(-1)
-    
-def main():
-    # print command line arguments
-    print(" The probability is: " + str(scoreModel(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5],sys.argv[6],sys.argv[7],sys.argv[8],sys.argv[9],sys.argv[10])))
-
-
-if __name__ == "__main__":
-    main()
-
+        return e
